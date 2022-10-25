@@ -64,7 +64,7 @@ main:
     jmp .halt
 
 
-greeting: db 'Welcome to SOS!', nl, 0
+greeting: db "Welcome to SOS!", nl, 0
 
 ; allocate 512 bytes of memory (510 bytes + 2 bytes of the 0xaa55 signature)
 ; $ - $$ gets the difference in bytes from the current line to the start
