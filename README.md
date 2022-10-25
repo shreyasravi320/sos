@@ -49,3 +49,9 @@ DS = data segment
 SS = stack segment
 ES, FS, GS = extra segments
 
+### Filesystem
+
+FAT12 is the simplest and most basic file system that we can use. Once I 
+understand more things I will migrate to FAT32
+
+[How filesystems work](https://wiki.osdev.org/FAT)
