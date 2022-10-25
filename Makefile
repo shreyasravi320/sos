@@ -8,3 +8,6 @@ $(BUILD)/floppy.img: $(BUILD)/main.bin
 
 $(BUILD)/main.bin: $(SRC)/main.asm
 	$(ASM) $(SRC)/main.asm -f bin -o $(BUILD)/main.bin
+
+run:
+	qemu-system-x86_64 -fda $(BUILD)/floppy.img
